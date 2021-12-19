@@ -1,4 +1,6 @@
-// receives two arguments, the price per goldToken[price in k's with one decimal (xx.x)}, and the number of imbuements
+// receives two arguments, the price per goldToken(price in k's with one decimal (xx.x)), and the number of imbuements
+const goldCoins = process.argv[2]
+const goldTokens = process.argv[3]
 
 function imbuementCalc(price, numberOfImbues) {
 
@@ -13,4 +15,4 @@ function imbuementCalc(price, numberOfImbues) {
   
 }
 
-console.log(imbuementCalc(34.4, 4) + "k p/h")
+console.log(imbuementCalc(goldCoins, goldTokens) + "k p/h")
